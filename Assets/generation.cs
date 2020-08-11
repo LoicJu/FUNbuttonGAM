@@ -22,6 +22,7 @@ public class generation : MonoBehaviour
 	string religion;
 	string sexualite;
 	string sexe;
+	string proffession;
 	string application;
 	string couleur;
 	string ethnie;
@@ -30,9 +31,7 @@ public class generation : MonoBehaviour
 	
 		// Start is called before the first frame update
 		void Start()
-		{			
-			new Random
-		
+		{					
 			noms = Telecharge("/nom.json");
 			religions = Telecharge("/religion.json");
 			sexualites = Telecharge("/sexualite.json");
@@ -51,7 +50,22 @@ public class generation : MonoBehaviour
 	}
 	
 	void generationPerdue(){
-		
+		attribution(noms, prenom);
+		attribution(noms, nomFamille);
+		attribution(religions, religion);
+		attribution(sexualites, sexualite);
+		attribution(sexes, sexe);
+		attribution(professions, proffession);
+		attribution(applications, application);
+		attribution(couleurs, couleur);
+		attribution(ethnies, ethnie);
+		attribution(fidels, fidel);
+	}
+	
+	void attribution(List<Attribute listee, string varii){
+		int x = Random.Range(0,noms.size()-1);
+		varii = listee[x].nom;
+		scorePerso += listee[x].score;
 	}
 	
 	List<Attribute> Telecharge(string path){
