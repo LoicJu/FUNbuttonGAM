@@ -16,16 +16,16 @@ public class SelectPerson : MonoBehaviour
     public Camera mainCamera;
     private bool hasBeenClicked = false;
     private int scoreAttributes = 0;
-    public int personalScore = 3;
+    public int personalScore;
     // Start is called before the first frame update
     void Start()
     {
+        // set initial score
+        personalScore = 3;
         // get button
         buttonShoot.onClick.AddListener(TaskOnClick);
         // get list circle
         listCircle = GameObject.Find("Generation").GetComponent<ShowPerson>().circlesList;
-        // create attributes
-        attributes = Instantiate(attributes, new Vector3(100, 100, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -54,7 +54,7 @@ public class SelectPerson : MonoBehaviour
             hasChanged = !hasChanged;
 
             GameObject.Find("Generation").GetComponent<generation>().generationPerdue();
-            string atts = GameObject.Find("Generation").GetComponent<generation>().prenom + GameObject.Find("Generation").GetComponent<generation>().sexualite;
+            string atts = GameObject.Find("Generation").GetComponent<generation>().prenom + " " + GameObject.Find("Generation").GetComponent<generation>().sexualite;
             attributes.GetComponent<TMPro.TextMeshPro>().SetText(atts);
             scoreAttributes = GameObject.Find("Generation").GetComponent<generation>().scorePerso;
 
