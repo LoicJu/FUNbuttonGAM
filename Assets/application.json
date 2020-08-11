@@ -1,9 +1,11 @@
-[
-	["TikTok"	,"10"],
-	["Youtube"	,"-10"],
-	["Google"	,"-10"],
-	["WeeChat"	,"15"],
-	["TaoBao"	,"20"],
-	["AliExpress"	,"15"],
-	["4Chan"	,"-40"]
-]
+{
+	"attribute":[
+		{"nom":"TikTok"		,"score": 10},
+		{"nom":"Youtube"	,"score":-10},
+		{"nom":"Google"		,"score":-10},
+		{"nom":"WeeChat"	,"score": 15},
+		{"nom":"TaoBao"		,"score": 20},
+		{"nom":"AliExpress"	,"score": 15},
+		{"nom":"4Chan"		,"score":-40}
+	]
+}

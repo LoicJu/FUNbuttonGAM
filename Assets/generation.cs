@@ -14,7 +14,7 @@ public class generation : MonoBehaviour
 			jsonString = File.ReadAllText(path);
 			Debug.Log(jsonString);
 			AttribList list = JsonUtility.FromJson<AttribList> (jsonString);
-			Debug.Log(list);
+			Debug.Log(list.attribute[0].nom);
 		}
 
 	// Update is called once per frame
@@ -34,5 +34,5 @@ public class Attribute
 [System.Serializable]
 public class AttribList
 {
-	public List<Attribute> attributes;
+	public List<Attribute> attribute;
 }
