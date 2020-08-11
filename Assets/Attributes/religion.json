@@ -1,7 +1,7 @@
-{
-"Musulman"	:-20,
-"Chrétien"	:-15,
-"Bouddiste"	:0,
-"Taoiste"	:5,
-"Confusianisme"	:10
-}
+[
+	["Musulman"		,-20],
+	["Chrétien"		,-15],
+	["Bouddiste"		,0],
+	["Taoiste"		,5],
+	["Confusianisme"	,10]
+]

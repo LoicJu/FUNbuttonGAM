@@ -1,6 +1,6 @@
-{
-	"Normal":5,
-	"Blanc":0,
-	"Noir":0,
-	"Mate":-5
-}
+[
+	["Normal"	,5],
+	["Blanc"	,0],
+	["Noir"		,0],
+	["Mate"		,-5]
+]

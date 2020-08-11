@@ -1,7 +1,7 @@
-{
-	"Han"		: 20,
-	"Ouïghour"	: -10,
-	"Mandarin"	: 10,
-	"Mongole"	: 5,
-	"Hong Kong"	: -5
-}
+[
+	["Han"		,20],
+	["Ouïghour"	,-10],
+	["Mandarin"	,10],
+	["Mongole"	,5],
+	["Hong Kong"	,-5]
+]

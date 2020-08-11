@@ -1,5 +1,5 @@
-{
-	"Homme":0,
-	"Femme":0,
-	"Autre":-10
-}
+[
+	["Homme"	,0],
+	["Femme"	,0],
+	["Autre"	,-10]
+]

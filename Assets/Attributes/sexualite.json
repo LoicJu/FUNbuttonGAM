@@ -1,5 +1,5 @@
-{
-	"Hétérosexuel":10,
-	"Homosexuel":-10,
-	"Zoophile":5
-}
+[
+	["Hétérosexuel"	,10],
+	["Homosexuel"	,-10],
+	["Zoophile"	,5]
+]
