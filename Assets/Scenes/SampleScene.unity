@@ -213,7 +213,7 @@ RectTransform:
   m_Children:
   - {fileID: 1396712819}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -346,7 +346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff0ad21d2207054d997e36da818ddf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circlesList: []
   circle: {fileID: 7046557312555795169, guid: ef59325537032f3409d3b41169bc1076, type: 3}
+  time: 0
+  WAIT_TIME: 2
 --- !u!1 &1393195611
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,5 +622,52 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1580990674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580990675}
+  - component: {fileID: 1580990676}
+  m_Layer: 0
+  m_Name: PersonageSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580990675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580990674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80, y: 15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580990676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580990674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63f5cf501695204fadde9bc853f4325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listCircle: []
+  attributes: {fileID: 7776417852691509066, guid: f94a9a13493e8c9438738b996c71e268,
+    type: 3}
+  attributesPerson: {fileID: 0}
