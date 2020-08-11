@@ -1,5 +1,7 @@
-[
-	["Homme"	,0],
-	["Femme"	,0],
-	["Autre"	,-10]
-]
+{
+	"attribute":[
+		{"nom":"Homme"	,"score":  0},
+		{"nom":"Femme"	,"score":  0},
+		{"nom":"Autre"	,"score":-10}
+	]
+}

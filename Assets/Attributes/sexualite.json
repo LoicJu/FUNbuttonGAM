@@ -1,5 +1,7 @@
-[
-	["Hétérosexuel"	,10],
-	["Homosexuel"	,-10],
-	["Zoophile"	,5]
-]
+{
+	"attribute":[
+		{"nom":"Hétérosexuel"	,"score": 10},
+		{"nom":"Homosexuel"	,"score":-10},
+		{"nom":"Zoophile"	,"score":  5}
+	]
+}
