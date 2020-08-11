@@ -1,7 +1,9 @@
-[
-	["Han"		,20],
-	["Ouïghour"	,-10],
-	["Mandarin"	,10],
-	["Mongole"	,5],
-	["Hong Kong"	,-5]
-]
+{
+	"attribute":[
+		{"nom":"Han"		,"score": 20},
+		{"nom":"Ouïghour"	,"score":-10},
+		{"nom":"Mandarin"	,"score": 10},
+		{"nom":"Mongole"	,"score":  5},
+		{"nom":"Hong Kong"	,"score": -5}
+	]
+}

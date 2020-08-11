@@ -1,6 +1,8 @@
-[
-	["Normal"	,5],
-	["Blanc"	,0],
-	["Noir"		,0],
-	["Mate"		,-5]
-]
+{
+	"attribute":[
+		{"nom":"Normal"		,"score": 5},
+		{"nom":"Blanc"		,"score": 0},
+		{"nom":"Noir"		,"score": 0},
+		{"nom":"Mate"		,"score":-5}
+	]
+}
