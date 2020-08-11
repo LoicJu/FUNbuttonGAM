@@ -1,0 +1,8 @@
+{
+	"Membre du parti"	:100,
+	"Ouvrier"		:0,
+	"Paysan"		:-5,
+	"Cadre"			:5,
+	"Chômeur"		:-10,
+	"Prostitué"		:-20
+}
