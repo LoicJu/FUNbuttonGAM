@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SelectPerson : MonoBehaviour
 {
 
     public List<GameObject> listCircle;
-    public GameObject attributes;
+    public TextMeshPro attributes;
     public Button buttonShoot;
     private GameObject selectedCircle;
     private bool hasChanged = false;
@@ -54,6 +55,7 @@ public class SelectPerson : MonoBehaviour
 
             GameObject.Find("Generation").GetComponent<generation>().generationPerdue();
             string atts = GameObject.Find("Generation").GetComponent<generation>().prenom + GameObject.Find("Generation").GetComponent<generation>().sexualite;
+            attributes.GetComponent<TMPro.TextMeshPro>().SetText(atts);
             scoreAttributes = GameObject.Find("Generation").GetComponent<generation>().scorePerso;
 
             if (selectedCircle.transform.position.x < 0)
