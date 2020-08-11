@@ -54,7 +54,6 @@ public class SelectPerson : MonoBehaviour
 
             GameObject.Find("Generation").GetComponent<generation>().generationPerdue();
             string atts = GameObject.Find("Generation").GetComponent<generation>().prenom + GameObject.Find("Generation").GetComponent<generation>().sexualite;
-            attributes.GetComponentsInChildren<TextAtt>().text = atts;
             scoreAttributes = GameObject.Find("Generation").GetComponent<generation>().scorePerso;
 
             if (selectedCircle.transform.position.x < 0)
