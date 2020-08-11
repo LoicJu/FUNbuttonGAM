@@ -7,7 +7,8 @@ public class ShowPerson : MonoBehaviour
     public List<GameObject> circlesList;
     public GameObject circle;
     public float time = 0.0f;
-    public float WAIT_TIME = 2.0f;
+    public float WAIT_TIME = 5.0f;
+    public bool hasChanged = true;
     private int NB_INSTANCES = 4;
 
     // Start is called before the first frame update
@@ -16,8 +17,8 @@ public class ShowPerson : MonoBehaviour
         for(int i=0; i< NB_INSTANCES; i++)
         {
             Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-            float x = Random.Range(-screenBounds.x, screenBounds.x);
-            float y = Random.Range(-screenBounds.y, screenBounds.y);
+            float x = Random.Range(-screenBounds.x + 1, screenBounds.x -1);
+            float y = Random.Range(-screenBounds.y + 1, screenBounds.y -1);
             GameObject instance = Instantiate(circle, new Vector3(x, y, 0), Quaternion.identity);
             circlesList.Add(instance);
         }
@@ -34,13 +35,14 @@ public class ShowPerson : MonoBehaviour
             time -= WAIT_TIME;
             // screenBounds not const in case of resize
             Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-            float x = Random.Range(-screenBounds.x, screenBounds.x);
-            float y = Random.Range(-screenBounds.y, screenBounds.y);
+            float x = Random.Range(-screenBounds.x + 1, screenBounds.x -1);
+            float y = Random.Range(-screenBounds.y + 1, screenBounds.y -1);
             
             GameObject instance = Instantiate(circle, new Vector3(x, y, 0), Quaternion.identity);
             circlesList.Add(instance);
             if (circlesList.Count > NB_INSTANCES)
             {
+                hasChanged = !hasChanged;
                 Destroy(circlesList[0]);
                 circlesList.RemoveAt(0);
             }

@@ -350,6 +350,7 @@ MonoBehaviour:
   circle: {fileID: 7046557312555795169, guid: ef59325537032f3409d3b41169bc1076, type: 3}
   time: 0
   WAIT_TIME: 2
+  hasChanged: 1
 --- !u!1 &1393195611
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +442,7 @@ GameObject:
   - component: {fileID: 1396712821}
   - component: {fileID: 1396712820}
   m_Layer: 5
-  m_Name: Button
+  m_Name: FunButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,4 +671,5 @@ MonoBehaviour:
   listCircle: []
   attributes: {fileID: 7776417852691509066, guid: f94a9a13493e8c9438738b996c71e268,
     type: 3}
-  attributesPerson: {fileID: 0}
+  buttonShoot: {fileID: 1396712820}
+  mainCamera: {fileID: 519420031}
