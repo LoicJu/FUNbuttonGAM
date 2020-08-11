@@ -1,10 +1,13 @@
 {
-	"Shuan",
-	"Xi",
-	"Kim",
-	"Ping",
-	"Pong",
-	"Ching",
-	"Chong",
-	"Wang"
+	"nom":[
+		{"nom":"Shuan",	"score":0},
+		{"nom":"Xi",	"score":0},
+		{"nom":"Kim",	"score":0},
+		{"nom":"Ping",	"score":0},
+		{"nom":"Pong",	"score":0},
+		{"nom":"Ching",	"score":0},
+		{"nom":"Chong",	"score":0},
+		{"nom":"Wang",	"score":0},
+		{"nom":"Dong",	"score":0}
+	]
 }

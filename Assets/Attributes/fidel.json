@@ -1,0 +1,8 @@
+{
+	"attribute":[
+		{"nom":"Fidel"				,"score":  0},
+		{"nom":"Visite des sites de discussion"	,"score": -5},
+		{"nom":"Visite des sites de recontres"	,"score":-20},
+		{"nom":"Infidel"			,"score":-40}
+	]
+}

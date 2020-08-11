@@ -1,0 +1,11 @@
+{
+	"attribute":[
+		{"nom":"Membre du parti"	,"score":100},
+		{"nom":"Ouvrier"		,"score":  0},
+		{"nom":"Paysan"			,"score":  0},
+		{"nom":"Agent de propagande"	,"score": 20},
+		{"nom":"Cadre"			,"score":  5},
+		{"nom":"Chômeur"		,"score":-10},
+		{"nom":"Prostitué"		,"score":-20}
+	]
+}

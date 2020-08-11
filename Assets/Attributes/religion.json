@@ -1,7 +1,9 @@
 {
-"Musulman"	:-20,
-"Chrétien"	:-15,
-"Bouddiste"	:0,
-"Taoiste"	:5,
-"Confusianisme"	:10
+	"attribute":[
+		{"nom":"Musulman"		,"score":-20},
+		{"nom":"Chrétien"		,"score":-15},
+		{"nom":"Bouddiste"		,"score":  0},
+		{"nom":"Taoiste"		,"score":  5},
+		{"nom":"Confusianiste"		,"score": 10}
+	]
 }
