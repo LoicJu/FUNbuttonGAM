@@ -14,8 +14,8 @@ public class SelectPerson : MonoBehaviour
 
     public Camera mainCamera;
     private bool hasBeenClicked = false;
-    private int scoreAttributes = 10;
-    private int personalScore = 0;
+    private int scoreAttributes = 0;
+    public int personalScore = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +40,7 @@ public class SelectPerson : MonoBehaviour
                 {
                     // bad
                     mainCamera.backgroundColor = Color.red;
+                    personalScore--;
                 }
                 else
                 {
@@ -50,7 +51,13 @@ public class SelectPerson : MonoBehaviour
             hasBeenClicked = false;
             selectedCircle = listCircle[0];
             hasChanged = !hasChanged;
-            if(selectedCircle.transform.position.x < 0)
+
+            GameObject.Find("Generation").GetComponent<generation>().generationPerdue();
+            string atts = GameObject.Find("Generation").GetComponent<generation>().prenom + GameObject.Find("Generation").GetComponent<generation>().sexualite;
+            attributes.GetComponentsInChildren<TextAtt>().text = atts;
+            scoreAttributes = GameObject.Find("Generation").GetComponent<generation>().scorePerso;
+
+            if (selectedCircle.transform.position.x < 0)
             {
                 attributes.transform.position = new Vector3(selectedCircle.transform.position.x + 1.5f, selectedCircle.transform.position.y, 0);
             }
@@ -58,10 +65,9 @@ public class SelectPerson : MonoBehaviour
             {
                 attributes.transform.position = new Vector3(selectedCircle.transform.position.x - 1.8f, selectedCircle.transform.position.y, 0);
             }
-            
-        }
-        // generate personage
 
+
+        }
     }
 
     void TaskOnClick()
@@ -77,6 +83,7 @@ public class SelectPerson : MonoBehaviour
         {
             // bad !
             mainCamera.backgroundColor = Color.red;
+            personalScore--;
         }
         Destroy(selectedCircle);
     }
