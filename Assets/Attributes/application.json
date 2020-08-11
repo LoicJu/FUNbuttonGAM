@@ -4,5 +4,6 @@
 	"Google"	:-10,
 	"WeeChat"	:15,
 	"TaoBao"	:20,
-	"AliExpress"	:15	
+	"AliExpress"	:15,
+	"4Chan"		:-40	
 }
